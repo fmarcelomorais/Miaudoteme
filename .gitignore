@@ -1,0 +1,11 @@
+# .NET build artifacts
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+.fake
