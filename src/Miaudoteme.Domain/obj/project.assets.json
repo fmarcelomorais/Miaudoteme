@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj",
+      "projectUniqueName": "F:\\dev\\miaudoteme\\src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj",
       "projectName": "Miaudoteme.Domain",
-      "projectPath": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj",
+      "projectPath": "F:\\dev\\miaudoteme\\src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\obj\\",
+      "outputPath": "F:\\dev\\miaudoteme\\src\\Miaudoteme.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
