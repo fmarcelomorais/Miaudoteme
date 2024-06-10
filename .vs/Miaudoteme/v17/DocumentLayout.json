@@ -21,19 +21,6 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Entidade.cs",
-              "DocumentMoniker": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Entidade.cs",
-              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\Models\\Entidade.cs",
-              "ToolTip": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Entidade.cs",
-              "RelativeToolTip": "src\\Miaudoteme.Domain\\Models\\Entidade.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T13:50:19.739Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
@@ -43,13 +30,25 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Entidade.cs",
+              "DocumentMoniker": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Entidade.cs",
+              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\Models\\Entidade.cs",
+              "ToolTip": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Entidade.cs",
+              "RelativeToolTip": "src\\Miaudoteme.Domain\\Models\\Entidade.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T13:50:19.739Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Usuario.cs",
               "DocumentMoniker": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\Models\\Usuario.cs",
               "ToolTip": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Usuario.cs",
               "RelativeToolTip": "src\\Miaudoteme.Domain\\Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T13:34:48.275Z",
               "EditorCaption": ""
