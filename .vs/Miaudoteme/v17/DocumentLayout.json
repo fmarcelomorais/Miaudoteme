@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\dev\\Miaudoteme\\Miaudoteme\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|f:\\dev\\miaudoteme\\miaudoteme\\src\\miaudoteme.domain\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|solutionrelative:src\\miaudoteme.domain\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|f:\\dev\\miaudoteme\\miaudoteme\\src\\miaudoteme.domain\\models\\entidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|solutionrelative:src\\miaudoteme.domain\\models\\entidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Entidade.cs",
+              "DocumentMoniker": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Entidade.cs",
+              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\Models\\Entidade.cs",
+              "ToolTip": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Entidade.cs",
+              "RelativeToolTip": "src\\Miaudoteme.Domain\\Models\\Entidade.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T13:50:19.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\Models\\Usuario.cs",
+              "ToolTip": "F:\\dev\\Miaudoteme\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Usuario.cs",
+              "RelativeToolTip": "src\\Miaudoteme.Domain\\Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T13:34:48.275Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
