@@ -8,8 +8,9 @@ namespace Miaudoteme.Domain.ValueObjects
 {
     public enum SituacaoAbrigo
     {
-        NaoLicenciado,
+        EmaAnalise,
         Licenciado,
+        NaoLicenciado,
         Recusado
     }
 }
