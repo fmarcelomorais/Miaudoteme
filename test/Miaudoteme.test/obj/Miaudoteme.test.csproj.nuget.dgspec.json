@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj": {}
+    "F:\\dev\\Miaudoteme\\test\\Miaudoteme.test\\Miaudoteme.test.csproj": {}
   },
   "projects": {
-    "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj": {
+    "F:\\dev\\Miaudoteme\\test\\Miaudoteme.test\\Miaudoteme.test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj",
-        "projectName": "Miaudoteme.Domain",
-        "projectPath": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj",
+        "projectUniqueName": "F:\\dev\\Miaudoteme\\test\\Miaudoteme.test\\Miaudoteme.test.csproj",
+        "projectName": "Miaudoteme.test",
+        "projectPath": "F:\\dev\\Miaudoteme\\test\\Miaudoteme.test\\Miaudoteme.test.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\obj\\",
+        "outputPath": "F:\\dev\\Miaudoteme\\test\\Miaudoteme.test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -48,6 +48,24 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -7,3 +7,8 @@ obj/
 *.suo
 *.user
 *.sln.docstates
+<<<<<<< HEAD
+=======
+
+.fake
+>>>>>>> 888954cf5b1b2dbebdf770ee080d41c9f2ba29ac
