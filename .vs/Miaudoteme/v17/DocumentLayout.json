@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "F:\\dev\\Miaudoteme\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|f:\\dev\\miaudoteme\\src\\miaudoteme.domain\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|solutionrelative:src\\miaudoteme.domain\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|f:\\dev\\miaudoteme\\src\\miaudoteme.domain\\valueobjects\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|solutionrelative:src\\miaudoteme.domain\\valueobjects\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|f:\\dev\\miaudoteme\\src\\miaudoteme.domain\\valueobjects\\senha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|solutionrelative:src\\miaudoteme.domain\\valueobjects\\senha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|f:\\dev\\miaudoteme\\src\\miaudoteme.domain\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|solutionrelative:src\\miaudoteme.domain\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Senha.cs",
-              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\ValueObjects\\Senha.cs",
-              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\ValueObjects\\Senha.cs",
-              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\ValueObjects\\Senha.cs",
-              "RelativeToolTip": "src\\Miaudoteme.Domain\\ValueObjects\\Senha.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAPAAAA",
+              "DocumentIndex": 0,
+              "Title": "Endereco.cs",
+              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Endereco.cs",
+              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\Models\\Endereco.cs",
+              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Endereco.cs",
+              "RelativeToolTip": "src\\Miaudoteme.Domain\\Models\\Endereco.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBEAAAB5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T11:36:18.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Email.cs",
-              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\ValueObjects\\Email.cs",
-              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\ValueObjects\\Email.cs",
-              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\ValueObjects\\Email.cs",
-              "RelativeToolTip": "src\\Miaudoteme.Domain\\ValueObjects\\Email.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T11:31:07.421Z",
+              "WhenOpened": "2024-06-11T11:52:57.911Z",
               "EditorCaption": ""
             },
             {
@@ -61,19 +40,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\Models\\Usuario.cs",
-              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Usuario.cs",
-              "RelativeToolTip": "src\\Miaudoteme.Domain\\Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T13:34:48.275Z",
-              "EditorCaption": ""
             }
           ]
         }
