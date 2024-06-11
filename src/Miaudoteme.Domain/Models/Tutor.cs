@@ -8,7 +8,7 @@ namespace Miaudoteme.Domain.Models
         public string? CPF { get; private set; }
         public Endereco Endereco { get; private set; }
         public Guid UsuarioId { get; private set; }
-        public Usuario Usuario { get; private set; } // prop. Navegação
+        public Usuario? Usuario { get; private set; } // prop. Navegação
 
         public Tutor(string nomeCompleto, string cPF, Endereco endereco, Guid usuarioId)
         {
