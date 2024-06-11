@@ -1,40 +1,29 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Miaudoteme.Domain.ValueObjects
 {
-    public class Nome
+    public static class Nome
     {
-        private string _nome { get; private set; }
-
-        public Nome(string nome)
+       
+        public static string ValidaNome(string nome)
         {
-            _nome = nome;
-            ValidaNome();
-        }
-
-        private void ValidaNome()
-        {
-            if(_nome == null) throw new Exception("Nome não pode ser nulo.")
-            if(_nome.Length < 3) throw new Exception("Nome deve conter mais de 2 caracteres.")
-            VerificaSeTemNumeroNoNome();
-            VerificaSeTemNomeESobrenome();
+            if (nome == null) throw new Exception("Nome não pode ser nulo.");
+            if (nome.Length < 3) throw new Exception("Nome deve conter mais de 2 caracteres.");
+            VerificaSeTemNumeroNoNome(nome);
+            VerificaSeTemNomeESobrenome(nome);
+            return nome;
             
         }
-        private void VerificaSeTemNumeroNoNome()
+        private static void VerificaSeTemNumeroNoNome(string nome)
         {
-            foreach(char c in _nome)
+            foreach(char c in nome)
             {
-                if(char.IsDigit(c))
-                    throw new Exception("Nome deve conter valores numéricos.")
+                if (char.IsDigit(c))
+                    throw new Exception("Nome deve conter valores numéricos.");
             }
         }
-        private void VerificaSeTemNomeESobrenome()
+        private static void VerificaSeTemNomeESobrenome(string nome)
         {
             int quantidadeDeEspacos = 0;
-            foreach(char c in _nome)
+            foreach(char c in nome)
             {
                 if(c == ' ') quantidadeDeEspacos++;
             }
