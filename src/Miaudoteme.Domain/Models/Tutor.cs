@@ -6,7 +6,8 @@ namespace Miaudoteme.Domain.Models
     {
         public string? NomeCompleto { get; private set; }
         public string? CPF { get; private set; }
-        public Endereco Endereco { get; private set; }
+        public Endereco Endereco { get; private set; } // Agregacao
+        public Guid EnderecoId { get; private set; }
         public Guid UsuarioId { get; private set; }
         public Usuario? Usuario { get; private set; } // prop. Navegação
 
@@ -16,6 +17,7 @@ namespace Miaudoteme.Domain.Models
             CPF = Documento.ValidaDocumento(cPF);
             Endereco = endereco;
             UsuarioId = usuarioId;
+            EnderecoId = endereco.Id;
         }
     }
 }

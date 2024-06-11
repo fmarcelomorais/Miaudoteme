@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "F:\\dev\\Miaudoteme\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|f:\\dev\\miaudoteme\\src\\miaudoteme.domain\\models\\contribuicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|solutionrelative:src\\miaudoteme.domain\\models\\contribuicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|f:\\dev\\miaudoteme\\src\\miaudoteme.domain\\valueobjects\\formadepagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|solutionrelative:src\\miaudoteme.domain\\valueobjects\\formadepagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|f:\\dev\\miaudoteme\\src\\miaudoteme.domain\\models\\adocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|solutionrelative:src\\miaudoteme.domain\\models\\adocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormaDePagamento.cs",
-              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\ValueObjects\\FormaDePagamento.cs",
-              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\ValueObjects\\FormaDePagamento.cs",
-              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\ValueObjects\\FormaDePagamento.cs",
-              "RelativeToolTip": "src\\Miaudoteme.Domain\\ValueObjects\\FormaDePagamento.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T16:56:03.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Contribuicao.cs",
-              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Contribuicao.cs",
-              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\Models\\Contribuicao.cs",
-              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Contribuicao.cs",
-              "RelativeToolTip": "src\\Miaudoteme.Domain\\Models\\Contribuicao.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAjwBsAAAA8AAAA",
+              "Title": "Adocao.cs",
+              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Adocao.cs",
+              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\Models\\Adocao.cs",
+              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Adocao.cs",
+              "RelativeToolTip": "src\\Miaudoteme.Domain\\Models\\Adocao.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA5wBgAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T16:52:14.786Z",
+              "WhenOpened": "2024-06-11T17:58:32.674Z",
               "EditorCaption": ""
             },
             {
