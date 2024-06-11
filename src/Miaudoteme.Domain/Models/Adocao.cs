@@ -23,9 +23,9 @@ namespace Miaudoteme.Domain.Models
 
         public Guid ContribuicaoId { get; private set; }
         public Contribuicao Contribuicao { get; private set;}
-        public Situacao Situacao { get; private set;}
+        public SituacaoAdocao SituacaoDaAdocao { get; private set;}
 
-        public Adocao(DateTime? dataAdocao, Guid animalId, Guid abrigoId, Guid tutorId, Guid contribuicaoId, Situacao situacao)
+        public Adocao(DateTime? dataAdocao, Guid animalId, Guid abrigoId, Guid tutorId, Guid contribuicaoId)
         {
             Codigo = Id.ToString().Replace("-","")[..10];
             DataAdocao = dataAdocao;
@@ -33,7 +33,12 @@ namespace Miaudoteme.Domain.Models
             AbrigoId = abrigoId;
             TutorId = tutorId;
             ContribuicaoId = contribuicaoId;
-            Situacao = situacao;
+            SituacaoDaAdocao = SituacaoAdocao.Analise;
+        }
+
+        public void AlteraSituacaoDaAdocao()
+        {
+            SituacaoDaAdocao = SituacaoAdocao.Finalizado;
         }
     }
 }

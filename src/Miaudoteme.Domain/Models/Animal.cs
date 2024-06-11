@@ -11,7 +11,7 @@ public class Animal : Entidade
     public int Idade { get; private set; }
     public string? Sobre { get; private set; }
 
-    public Animal(string? nome, string? raca, Genero genero, int anoNascimento, string? sobre)
+    public Animal(string nome, string? raca, Genero genero, int anoNascimento, string? sobre)
     {
         Nome = ValueObjects.Nome.ValidaNome(nome);
         Raca = raca;
