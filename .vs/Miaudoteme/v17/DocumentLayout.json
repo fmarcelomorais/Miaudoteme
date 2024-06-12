@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\dev\\Miaudoteme\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|f:\\dev\\miaudoteme\\src\\miaudoteme.domain\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E02083D-803C-4B34-9B9C-F2F8F881AF59}|src\\Miaudoteme.Domain\\Miaudoteme.Domain.csproj|solutionrelative:src\\miaudoteme.domain\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Endereco.cs",
-              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Endereco.cs",
-              "RelativeDocumentMoniker": "src\\Miaudoteme.Domain\\Models\\Endereco.cs",
-              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Domain\\Models\\Endereco.cs",
-              "RelativeToolTip": "src\\Miaudoteme.Domain\\Models\\Endereco.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBEAAAB5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T11:52:57.911Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
