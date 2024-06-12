@@ -1,10 +1,5 @@
 ﻿using Miaudoteme.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Miaudoteme.Infraestrutura.Context
 {
@@ -18,5 +13,22 @@ namespace Miaudoteme.Infraestrutura.Context
         public DbSet<Licenca> Licencas { get; set; }
         public DbSet<Tutor> Tutores { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+
+        public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
+        {
+            
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=MiaudotemeDb;Trusted_Connection=True;Encrypt=False;TrustServerCertificate=True;");
+            base.OnConfiguring(optionsBuilder);
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationContext).Assembly);
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

@@ -15,6 +15,8 @@ namespace Miaudoteme.Domain.Models
         public decimal Valor {  get; private set; }
         public int Parcelas { get; private set; }
 
+        public Adocao Adocao { get; private set; }
+
         public Contribuicao(FormaDePagamento formaDePagamento, string numeroCartao, string? chavePix, decimal valor, int parcelas = 1)
         {
             FormaDePagamento = formaDePagamento;

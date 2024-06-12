@@ -11,6 +11,7 @@ namespace Miaudoteme.Domain.ValueObjects
         EmaAnalise = 1,
         Licenciado = 2,
         NaoLicenciado = 3,
-        Recusado = 4
+        Recusado = 4,
+        Desativado = 5
     }
 }
