@@ -8,7 +8,7 @@ using System.Net.Http.Headers;
 
 namespace Miaudoteme.Infraestrutura.Repositories
 {
-    public class UsuarioRepository : IRepositoryGeneric<Usuario>
+    public class UsuarioRepository : IUsuarioRepository
     {
         private readonly ApplicationContext _context;
         public UsuarioRepository(ApplicationContext context)
