@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miaudoteme.Domain", "src\Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miaudoteme.test", "test\Miaudoteme.test\Miaudoteme.test.csproj", "{F6993296-4F4B-4063-AD91-00B71E189594}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miaudoteme.Infraestrutura", "src\Miaudoteme.Infraestrutura\Miaudoteme.Infraestrutura.csproj", "{A4BF71A1-0D0F-4F2D-AF23-0574F7355949}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F6993296-4F4B-4063-AD91-00B71E189594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6993296-4F4B-4063-AD91-00B71E189594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6993296-4F4B-4063-AD91-00B71E189594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BF71A1-0D0F-4F2D-AF23-0574F7355949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BF71A1-0D0F-4F2D-AF23-0574F7355949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BF71A1-0D0F-4F2D-AF23-0574F7355949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BF71A1-0D0F-4F2D-AF23-0574F7355949}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

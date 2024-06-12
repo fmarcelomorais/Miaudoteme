@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Miaudoteme.Domain.ValueObjects
 {
-    public enum SituacaoAbrigo
+    public enum FormaDePagamento
     {
-        EmaAnalise = 1,
-        Licenciado = 2,
-        NaoLicenciado = 3,
-        Recusado = 4,
-        Desativado = 5
+        CartaoDeCredito = 1,
+        CartaoDeDebito = 2,
+        Carnê = 3,
+        Pix = 4,
+        Dinheiro = 5,
+        Outro = 6
+
     }
 }
