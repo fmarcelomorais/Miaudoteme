@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miaudoteme.CrossCutting", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miaudoteme.Application", "src\Miaudoteme.Application\Miaudoteme.Application.csproj", "{66CF0F1A-0C56-4E47-A021-21718A3C49FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miaudoteme.Api", "src\Miaudoteme.Api\Miaudoteme.Api.csproj", "{A3A195FB-99E4-46C1-975D-A9FC09894514}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{66CF0F1A-0C56-4E47-A021-21718A3C49FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66CF0F1A-0C56-4E47-A021-21718A3C49FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66CF0F1A-0C56-4E47-A021-21718A3C49FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3A195FB-99E4-46C1-975D-A9FC09894514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A195FB-99E4-46C1-975D-A9FC09894514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A195FB-99E4-46C1-975D-A9FC09894514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A195FB-99E4-46C1-975D-A9FC09894514}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
