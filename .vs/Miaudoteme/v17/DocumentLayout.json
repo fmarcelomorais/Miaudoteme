@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "F:\\dev\\Miaudoteme\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{66CF0F1A-0C56-4E47-A021-21718A3C49FD}|src\\Miaudoteme.Application\\Miaudoteme.Application.csproj|f:\\dev\\miaudoteme\\src\\miaudoteme.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66CF0F1A-0C56-4E47-A021-21718A3C49FD}|src\\Miaudoteme.Application\\Miaudoteme.Application.csproj|solutionrelative:src\\miaudoteme.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84BCC880-EC21-416A-B616-9D26E9E45514}|src\\Miaudoteme.CrossCutting\\Miaudoteme.CrossCutting.csproj|f:\\dev\\miaudoteme\\src\\miaudoteme.crosscutting\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84BCC880-EC21-416A-B616-9D26E9E45514}|src\\Miaudoteme.CrossCutting\\Miaudoteme.CrossCutting.csproj|solutionrelative:src\\miaudoteme.crosscutting\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A4BF71A1-0D0F-4F2D-AF23-0574F7355949}|src\\Miaudoteme.Infraestrutura\\Miaudoteme.Infraestrutura.csproj|f:\\dev\\miaudoteme\\src\\miaudoteme.infraestrutura\\context\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4BF71A1-0D0F-4F2D-AF23-0574F7355949}|src\\Miaudoteme.Infraestrutura\\Miaudoteme.Infraestrutura.csproj|solutionrelative:src\\miaudoteme.infraestrutura\\context\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Infraestrutura\\Context\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "src\\Miaudoteme.Infraestrutura\\Context\\ApplicationContext.cs",
-              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Infraestrutura\\Context\\ApplicationContext.cs",
-              "RelativeToolTip": "src\\Miaudoteme.Infraestrutura\\Context\\ApplicationContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T03:11:36.197Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -40,6 +35,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Application\\Class1.cs",
+              "RelativeDocumentMoniker": "src\\Miaudoteme.Application\\Class1.cs",
+              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Application\\Class1.cs",
+              "RelativeToolTip": "src\\Miaudoteme.Application\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T13:02:31.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.CrossCutting\\Class1.cs",
+              "RelativeDocumentMoniker": "src\\Miaudoteme.CrossCutting\\Class1.cs",
+              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.CrossCutting\\Class1.cs",
+              "RelativeToolTip": "src\\Miaudoteme.CrossCutting\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T13:01:41.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Infraestrutura\\Context\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "src\\Miaudoteme.Infraestrutura\\Context\\ApplicationContext.cs",
+              "ToolTip": "F:\\dev\\Miaudoteme\\src\\Miaudoteme.Infraestrutura\\Context\\ApplicationContext.cs",
+              "RelativeToolTip": "src\\Miaudoteme.Infraestrutura\\Context\\ApplicationContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T03:11:36.197Z",
+              "EditorCaption": ""
             }
           ]
         }
