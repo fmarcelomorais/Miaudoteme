@@ -1,5 +1,7 @@
 ﻿using Miaudoteme.Domain.Interfaces;
 using Miaudoteme.Domain.Models;
+using Miaudoteme.Infraestrutura.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,39 +13,52 @@ namespace Miaudoteme.Infraestrutura.Repositories
 {
     public class EnderecoRepository : IEnderecoRepository
     {
-        public Task<Endereco> Busca(Expression<Func<Endereco, bool>> expression)
+        private readonly ApplicationContext _context;
+        public EnderecoRepository(ApplicationContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+        public async Task<Endereco> Busca(Expression<Func<Endereco, bool>> expression)
+        {
+            var endereco = await _context.Enderecos.FindAsync(expression);
+            return endereco;
         }
 
-        public Task<Endereco> BuscaPorId(Guid id)
+        public async Task<Endereco> BuscaPorId(Guid id)
         {
-            throw new NotImplementedException();
+            var endereco = await _context.Enderecos.FindAsync($"{id}");
+            return endereco;
         }
 
-        public Task<List<Endereco>> BuscaTodos()
+        public async Task<List<Endereco>> BuscaTodos()
         {
-            throw new NotImplementedException();
+            return await _context.Enderecos.ToListAsync();
+            
         }
 
-        public Task<Endereco> Criar(Endereco entidade)
+        public async Task<Endereco> Criar(Endereco entidade)
         {
-            throw new NotImplementedException();
+            await _context.Enderecos.AddAsync(entidade);
+            var result = _context.SaveChanges();
+            return result == 1 ? entidade : throw new Exception("Erro ao criar endereco");
         }
 
-        public Task Deletar(Guid id)
+        public async Task Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var endereco = await Busca(end => end.Id == id);
+            _context.Enderecos.Remove(endereco);
+
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context?.Dispose();
         }
 
-        public Task Editar(Endereco entidade)
+        public async Task Editar(Endereco entidade)
         {
-            throw new NotImplementedException();
+            _context.Enderecos.Update(entidade);
+            await _context.SaveChangesAsync();
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using Miaudoteme.Domain.Interfaces;
 using Miaudoteme.Domain.Models;
+using Miaudoteme.Infraestrutura.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,39 +13,51 @@ namespace Miaudoteme.Infraestrutura.Repositories
 {
     public class TutorRepository : ITutorRepository
     {
-        public Task<Tutor> Busca(Expression<Func<Tutor, bool>> expression)
+        private readonly ApplicationContext _context;
+        public TutorRepository(ApplicationContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+        public async Task<Tutor> Busca(Expression<Func<Tutor, bool>> expression)
+        {
+            var tutor = await _context.Tutores.FindAsync(expression);
+            return tutor;
         }
 
-        public Task<Tutor> BuscaPorId(Guid id)
+        public async Task<Tutor> BuscaPorId(Guid id)
         {
-            throw new NotImplementedException();
+            var tutor = await _context.Tutores.FirstOrDefaultAsync(t => t.Id == id);
+            return tutor;
         }
 
-        public Task<List<Tutor>> BuscaTodos()
+        public async Task<List<Tutor>> BuscaTodos()
         {
-            throw new NotImplementedException();
+            return await _context.Tutores.ToListAsync();
         }
 
-        public Task<Tutor> Criar(Tutor entidade)
+        public async Task<Tutor> Criar(Tutor entidade)
         {
-            throw new NotImplementedException();
+            await _context.Tutores.AddAsync(entidade);
+            var result = _context.SaveChanges();
+            return result == 1 ? entidade : throw new Exception("Erro ao criar tutor");
         }
 
-        public Task Deletar(Guid id)
+        public async Task Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var tutor = await BuscaPorId(id);
+            _context.Tutores.Remove(tutor);
+            await _context.SaveChangesAsync();
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context?.Dispose();
         }
 
-        public Task Editar(Tutor entidade)
+        public async Task Editar(Tutor entidade)
         {
-            throw new NotImplementedException();
+            _context.Tutores.Update(entidade);
+            await _context.SaveChangesAsync();
         }
     }
 }
