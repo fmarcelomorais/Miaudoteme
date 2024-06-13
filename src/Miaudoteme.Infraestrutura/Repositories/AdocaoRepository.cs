@@ -1,5 +1,7 @@
 ﻿using Miaudoteme.Domain.Interfaces;
 using Miaudoteme.Domain.Models;
+using Miaudoteme.Infraestrutura.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,39 +13,51 @@ namespace Miaudoteme.Infraestrutura.Repositories
 {
     public class AdocaoRepository : IAdocaoRepository
     {
-        public Task<Adocao> Busca(Expression<Func<Adocao, bool>> expression)
+        private readonly ApplicationContext _context;
+        public AdocaoRepository(ApplicationContext context) 
+        { 
+            _context = context; 
+        }
+        public async Task<Adocao> Busca(Expression<Func<Adocao, bool>> expression)
         {
-            throw new NotImplementedException();
+            var adocao = await _context.Adocoes.FindAsync(expression);
+            return adocao;
         }
 
-        public Task<Adocao> BuscaPorId(Guid id)
+        public async Task<Adocao> BuscaPorId(Guid id)
         {
-            throw new NotImplementedException();
+            var adocao = await _context.Adocoes.FirstOrDefaultAsync(adocao => adocao.Id == id);
+            return adocao;
         }
 
-        public Task<List<Adocao>> BuscaTodos()
+        public async Task<List<Adocao>> BuscaTodos()
         {
-            throw new NotImplementedException();
+            return await _context.Adocoes.ToListAsync();
         }
 
-        public Task<Adocao> Criar(Adocao entidade)
+        public async Task<Adocao> Criar(Adocao entidade)
         {
-            throw new NotImplementedException();
+            await _context.Adocoes.AddAsync(entidade);
+            var result = _context.SaveChanges();
+            return result == 1 ? entidade : throw new Exception("Erro ao criar abrigo");
         }
 
-        public Task Deletar(Guid id)
+        public async Task Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var adocao = await BuscaPorId(id);
+            _context.Adocoes.Remove(adocao);
+            _context.SaveChanges();
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context?.Dispose();
         }
 
-        public Task Editar(Adocao entidade)
+        public async Task Editar(Adocao entidade)
         {
-            throw new NotImplementedException();
+            _context.Adocoes.Update(entidade);
+            await _context.SaveChangesAsync();
         }
     }
 }
