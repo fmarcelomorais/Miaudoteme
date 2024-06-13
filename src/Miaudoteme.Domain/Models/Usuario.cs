@@ -12,10 +12,10 @@ public class Usuario : Entidade
     public Abrigo Abrigo { get; private set; } // prop navegacao
     public Tutor Tutor { get; private set; } // prop navegacao
 
-    public Usuario(string nome, string email, string senha, TipoUsuario tipoUsuario)
+    public Usuario(string nomeCompleto, string email, string senha, TipoUsuario tipoUsuario)
     {
 
-        NomeCompleto = Nome.ValidaNome(nome);
+        NomeCompleto = ValueObjects.Nome.ValidaNome(nomeCompleto);
         Email = ValueObjects.Email.ValidaEmail(email);
         Senha = ValueObjects.Senha.ValidaSenha(senha);
         TipoUsuario = tipoUsuario;

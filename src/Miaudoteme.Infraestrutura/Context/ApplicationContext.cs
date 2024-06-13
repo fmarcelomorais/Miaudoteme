@@ -25,7 +25,7 @@ namespace Miaudoteme.Infraestrutura.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=HMiaudotemeDb;Trusted_Connection=True;Encrypt=False;TrustServerCertificate=True;");
+            //optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=HMiaudotemeDb;Trusted_Connection=True;Encrypt=False;TrustServerCertificate=True;");
             base.OnConfiguring(optionsBuilder);
         }
 

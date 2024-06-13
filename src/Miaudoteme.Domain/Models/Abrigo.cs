@@ -24,6 +24,11 @@ namespace Miaudoteme.Domain.Models
 
         public Adocao Adocao { get; private set; } // prop navegacao
 
+
+        public Abrigo()
+        {
+            
+        }
         public Abrigo(string nomeAbrigo, string cNPJ, string contato, string email, Endereco endereco, Licenca licenca, Guid usuarioId)
         {
             NomeAbrigo = Nome.ValidaNome(nomeAbrigo);

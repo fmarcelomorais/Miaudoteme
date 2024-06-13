@@ -9,5 +9,11 @@ namespace Miaudoteme.Domain.Models
     public class Licenca : Entidade
     {
         public string Numero { get; set; }
+        public Licenca()
+        {
+            
+        }
     }
+
+   
 }

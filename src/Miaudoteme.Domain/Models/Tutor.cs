@@ -13,6 +13,11 @@ namespace Miaudoteme.Domain.Models
 
         public Adocao Adocao { get; private set; } // prop Navegacao
 
+        public Tutor()
+        {
+            
+        }
+
         public Tutor(string nomeCompleto, string cPF, Endereco endereco, Guid usuarioId)
         {
             NomeCompleto = Nome.ValidaNome(nomeCompleto);
