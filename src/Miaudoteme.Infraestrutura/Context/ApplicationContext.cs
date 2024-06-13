@@ -14,14 +14,18 @@ namespace Miaudoteme.Infraestrutura.Context
         public DbSet<Tutor> Tutores { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
 
-        public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
+        public ApplicationContext()
         {
             
+        }
+        public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
+        {
+
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=MiaudotemeDb;Trusted_Connection=True;Encrypt=False;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=HMiaudotemeDb;Trusted_Connection=True;Encrypt=False;TrustServerCertificate=True;");
             base.OnConfiguring(optionsBuilder);
         }
 

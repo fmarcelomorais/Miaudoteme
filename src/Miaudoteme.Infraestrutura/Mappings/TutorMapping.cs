@@ -15,7 +15,7 @@ namespace Miaudoteme.Infraestrutura.Mappings
             builder.Property(t => t.CPF).HasColumnType("CHAR(11)").IsRequired();
             builder.Property(t => t.CPF).HasColumnType("CHAR(11)").IsRequired();
 
-            builder.HasOne(t => t.Usuario).WithOne(t => t.Tutor).OnDelete(DeleteBehavior.Cascade);
+            builder.HasOne(t => t.Usuario).WithOne(t => t.Tutor).OnDelete(DeleteBehavior.NoAction);
 
         }
     }

@@ -15,10 +15,10 @@ namespace Miaudoteme.Infraestrutura.Mappings
             builder.Property(adocao => adocao.DataAdocao).HasDefaultValueSql("GETDATE()").ValueGeneratedOnAdd().IsRequired();
             builder.Property(adocao => adocao.SituacaoDaAdocao).HasConversion<string>().IsRequired();
 
-            builder.HasOne(a => a.Animal).WithOne(a => a.Adocao);
-            builder.HasOne(a => a.Abrigo).WithOne(a => a.Adocao);
-            builder.HasOne(a => a.Tutor).WithOne(a => a.Adocao);
-            builder.HasOne(a => a.Contribuicao).WithOne(a => a.Adocao);
+            builder.HasOne(a => a.Animal).WithOne(a => a.Adocao).OnDelete(DeleteBehavior.NoAction);
+            builder.HasOne(a => a.Abrigo).WithOne(a => a.Adocao).OnDelete(DeleteBehavior.NoAction);
+            builder.HasOne(a => a.Tutor).WithOne(a => a.Adocao).OnDelete(DeleteBehavior.NoAction);
+            builder.HasOne(a => a.Contribuicao).WithOne(a => a.Adocao).OnDelete(DeleteBehavior.NoAction);
         }
     }
 }
