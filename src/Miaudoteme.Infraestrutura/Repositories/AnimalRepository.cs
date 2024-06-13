@@ -1,5 +1,7 @@
 ﻿using Miaudoteme.Domain.Interfaces;
 using Miaudoteme.Domain.Models;
+using Miaudoteme.Infraestrutura.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,39 +13,52 @@ namespace Miaudoteme.Infraestrutura.Repositories
 {
     public class AnimalRepository : IAnimalRepository
     {
-        public Task<Animal> Busca(Expression<Func<Animal, bool>> expression)
+        private readonly ApplicationContext _context;
+        public AnimalRepository(ApplicationContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+        public async Task<Animal> Busca(Expression<Func<Animal, bool>> expression)
+        {
+            var animal = await _context.Animais.FindAsync(expression);
+            return animal;
         }
 
-        public Task<Animal> BuscaPorId(Guid id)
+        public async Task<Animal> BuscaPorId(Guid id)
         {
-            throw new NotImplementedException();
+            var animal = await _context.Animais.FirstOrDefaultAsync(animal => animal.Id == id);
+            return animal;
         }
 
-        public Task<List<Animal>> BuscaTodos()
+        public async Task<List<Animal>> BuscaTodos()
         {
-            throw new NotImplementedException();
+            return await _context.Animais.ToListAsync();
+            
         }
 
-        public Task<Animal> Criar(Animal entidade)
+        public async Task<Animal> Criar(Animal entidade)
         {
-            throw new NotImplementedException();
+            await _context.Animais.AddAsync(entidade);
+            var result = _context.SaveChanges();
+            return result == 1 ? entidade : throw new Exception("Erro ao criar Animal");
         }
 
-        public Task Deletar(Guid id)
+        public async Task Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var animal = await BuscaPorId(id);
+            _context.Animais.Remove(animal);
+            await _context.SaveChangesAsync();
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context?.Dispose();
         }
 
-        public Task Editar(Animal entidade)
+        public async Task Editar(Animal entidade)
         {
-            throw new NotImplementedException();
+            _context.Animais.Update(entidade);
+            await _context.SaveChangesAsync();
         }
     }
 }

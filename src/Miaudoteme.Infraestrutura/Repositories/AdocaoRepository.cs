@@ -39,7 +39,7 @@ namespace Miaudoteme.Infraestrutura.Repositories
         {
             await _context.Adocoes.AddAsync(entidade);
             var result = _context.SaveChanges();
-            return result == 1 ? entidade : throw new Exception("Erro ao criar abrigo");
+            return result == 1 ? entidade : throw new Exception("Erro ao criar Adocão");
         }
 
         public async Task Deletar(Guid id)
