@@ -1,5 +1,7 @@
 ﻿using Miaudoteme.Domain.Interfaces;
 using Miaudoteme.Domain.Models;
+using Miaudoteme.Infraestrutura.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,39 +13,54 @@ namespace Miaudoteme.Infraestrutura.Repositories
 {
     public class AbrigoRepository : IAbrigoRepository
     {
-        public Task<Abrigo> Busca(Expression<Func<Abrigo, bool>> expression)
+
+        private readonly ApplicationContext _context;
+        public AbrigoRepository(ApplicationContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+        public async Task<Abrigo> Busca(Expression<Func<Abrigo, bool>> expression)
+        {
+            var abrigo = await _context.Abrigos.FindAsync(expression);
+            return abrigo;
         }
 
-        public Task<Abrigo> BuscaPorId(Guid id)
+        public async Task<Abrigo> BuscaPorId(Guid id)
         {
-            throw new NotImplementedException();
+            var abrigo = await _context.Abrigos.FirstOrDefaultAsync(abrigo => abrigo.Id == id);
+            return abrigo;
         }
 
-        public Task<List<Abrigo>> BuscaTodos()
+        public async Task<List<Abrigo>> BuscaTodos()
         {
-            throw new NotImplementedException();
+            var abrigos = await _context.Abrigos.ToListAsync();
+            return abrigos;
         }
 
-        public Task<Abrigo> Criar(Abrigo entidade)
+        public async Task<Abrigo> Criar(Abrigo entidade)
         {
-            throw new NotImplementedException();
+            await _context.Abrigos.AddAsync(entidade);
+            var result = _context.SaveChanges();
+            return result == 1 ? entidade : throw new Exception("Erro ao criar abrigo");
         }
 
-        public Task Deletar(Guid id)
+        public async Task Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var abrigo = await BuscaPorId(id);
+            _context.Abrigos.Remove(abrigo);
+            _context.SaveChanges();
+            
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context?.Dispose();
         }
 
-        public Task Editar(Abrigo entidade)
+        public async Task Editar(Abrigo entidade)
         {
-            throw new NotImplementedException();
+            _context.Abrigos.Update(entidade);
+            await _context.SaveChangesAsync();
         }
     }
 }
