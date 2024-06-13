@@ -1,5 +1,7 @@
 ﻿using Miaudoteme.Domain.Interfaces;
 using Miaudoteme.Domain.Models;
+using Miaudoteme.Infraestrutura.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,39 +13,51 @@ namespace Miaudoteme.Infraestrutura.Repositories
 {
     public class ContribuicaoRepository : IContribuicaoRepository
     {
-        public Task<Contribuicao> Busca(Expression<Func<Contribuicao, bool>> expression)
+        private readonly ApplicationContext _context;
+        public ContribuicaoRepository(ApplicationContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+        public async Task<Contribuicao> Busca(Expression<Func<Contribuicao, bool>> expression)
+        {
+            var contribuicao = await _context.Contribuicoes.FindAsync(expression);
+            return contribuicao;
         }
 
-        public Task<Contribuicao> BuscaPorId(Guid id)
+        public async Task<Contribuicao> BuscaPorId(Guid id)
         {
-            throw new NotImplementedException();
+            var contribuicao = await _context.Contribuicoes.FirstOrDefaultAsync(cont => cont.Equals(id));
+            return contribuicao;
         }
 
-        public Task<List<Contribuicao>> BuscaTodos()
+        public async Task<List<Contribuicao>> BuscaTodos()
         {
-            throw new NotImplementedException();
+            return await _context.Contribuicoes.ToListAsync();
         }
 
-        public Task<Contribuicao> Criar(Contribuicao entidade)
+        public async Task<Contribuicao> Criar(Contribuicao entidade)
         {
-            throw new NotImplementedException();
+            await _context.Contribuicoes.AddAsync(entidade);
+            var result = _context.SaveChanges();
+            return result == 1 ? entidade : throw new Exception("Erro ao criar contribuição");
         }
 
-        public Task Deletar(Guid id)
+        public async Task Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var contribuicao = await BuscaPorId(id);
+            _context.Contribuicoes.Remove(contribuicao);
+            await _context.SaveChangesAsync();
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context?.Dispose();
         }
 
-        public Task Editar(Contribuicao entidade)
+        public async Task Editar(Contribuicao entidade)
         {
-            throw new NotImplementedException();
+            _context.Contribuicoes.Update(entidade);
+            await _context.SaveChangesAsync();
         }
     }
 }
