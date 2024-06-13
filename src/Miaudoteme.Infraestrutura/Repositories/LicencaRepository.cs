@@ -1,5 +1,7 @@
 ﻿using Miaudoteme.Domain.Interfaces;
 using Miaudoteme.Domain.Models;
+using Miaudoteme.Infraestrutura.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,39 +13,50 @@ namespace Miaudoteme.Infraestrutura.Repositories
 {
     public class LicencaRepository : ILicencaRepository
     {
-        public Task<Licenca> Busca(Expression<Func<Licenca, bool>> expression)
+        private readonly ApplicationContext _context;
+        public LicencaRepository(ApplicationContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+        public async Task<Licenca> Busca(Expression<Func<Licenca, bool>> expression)
+        {
+            var licenca = await _context.Licencas.FindAsync(expression);
+            return licenca;
         }
 
-        public Task<Licenca> BuscaPorId(Guid id)
+        public async Task<Licenca> BuscaPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return await _context.Licencas.FirstOrDefaultAsync(li => li.Id == id);
         }
 
-        public Task<List<Licenca>> BuscaTodos()
+        public async Task<List<Licenca>> BuscaTodos()
         {
-            throw new NotImplementedException();
+            return await _context.Licencas.ToListAsync();
         }
 
-        public Task<Licenca> Criar(Licenca entidade)
+        public async Task<Licenca> Criar(Licenca entidade)
         {
-            throw new NotImplementedException();
+            await _context.Licencas.AddAsync(entidade);
+            var result = _context.SaveChanges();
+            return result == 1 ? entidade : throw new Exception("Erro ao criar licenca");
         }
 
-        public Task Deletar(Guid id)
+        public async Task Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var licenca = await BuscaPorId(id);
+            _context.Licencas.Remove(licenca);
+            await _context.SaveChangesAsync();
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context?.Dispose();
         }
 
-        public Task Editar(Licenca entidade)
+        public async Task Editar(Licenca entidade)
         {
-            throw new NotImplementedException();
+            _context.Licencas.Update(entidade);
+            await _context.SaveChangesAsync();
         }
     }
 }
